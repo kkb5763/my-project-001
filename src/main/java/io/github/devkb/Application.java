@@ -5,7 +5,7 @@ package io.github.devkb;
 
 public class Application {
     public String getGreeting() {
-        return "Hello BONGBONG";
+        return "Hello BONGBONG!!!";
     }
 
     public static void main(String[] args) {

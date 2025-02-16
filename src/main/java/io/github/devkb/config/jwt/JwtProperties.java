@@ -1,0 +1,8 @@
+package io.github.devkb.config.jwt;
+
+public interface JwtProperties {
+	String SECRET = "c2FtcGxlcGxwbHBscGxscGxramhramhsa2psaWppaGt1aGtiYXNkc2FkYXNkc2Fkc2FnZWFmZWpqeWdqdWhramxpamxpamxrbmtqaGp5dXlmanlmamY="; // 우리 서버만 알고 있는 비밀값
+	int EXPIRATION_TIME = 864000000; // 10일 (1/1000초)
+	String TOKEN_PREFIX = "Bearer ";
+	String HEADER_STRING = "Authorization";
+}

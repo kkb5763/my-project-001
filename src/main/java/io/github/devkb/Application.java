@@ -3,13 +3,13 @@
  */
 package io.github.devkb;
 
-public class Application {
-    public String getGreeting() {
-        return "Hello BONGBONG!!!";
-    }
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
+public class Application {
     public static void main(String[] args) {
-        System.out.println(new Application().getGreeting());
+        SpringApplication.run(Application.class, args);
     }
 }
 

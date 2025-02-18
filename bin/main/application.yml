@@ -17,14 +17,23 @@ security:
 #GRANT ALL PRIVILEGES ON mydatabase.* TO 'myuser'@'%';
 #FLUSH PRIVILEGES;
 
+# spring:
+#   datasource:
+#     driver-class-name: org.mariadb.jdbc.Driver # mariadb
+#     url: jdbc:mariadb://34.64.69.109:3306/mydatabase?serverTimezone=Asia/Seoul&useSSL=false&allowPublicKeyRetrieval=true
+#     username: myuser     # root
+#     password: mypassword # q1w2e3r4!!
+
 spring:
   datasource:
-    driver-class-name: org.mariadb.jdbc.Driver # mariadb
-    url: jdbc:mariadb://34.64.69.109:3306/mydatabase?serverTimezone=Asia/Seoul&useSSL=false&allowPublicKeyRetrieval=true
-    username: myuser     # root
-    password: mypassword # q1w2e3r4!!
-
-
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      
   mvc:
     view:
       prefix: /templates/

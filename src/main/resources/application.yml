@@ -33,7 +33,6 @@ spring:
   h2:
     console:
       enabled: true
-      
   mvc:
     view:
       prefix: /templates/

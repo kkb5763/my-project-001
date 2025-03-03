@@ -27,7 +27,10 @@ public class IndexController {
 	public @ResponseBody String index() {
 		return "인덱스 페이지입니다.";
 	}
-
+	@GetMapping({ "", "/lll" })
+	public @ResponseBody String loginV2() {
+		return "login";
+	}
 	@GetMapping("/user")
 	public @ResponseBody String user(@AuthenticationPrincipal PrincipalDetails principal) {
 		System.out.println("Principal : " + principal);

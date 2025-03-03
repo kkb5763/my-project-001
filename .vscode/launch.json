@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<my-project-001>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "io.github.devkb.Application",
+            "projectName": "my-project-001",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
